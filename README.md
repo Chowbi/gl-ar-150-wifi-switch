@@ -16,15 +16,15 @@ test !
 
 if fail / error :  
 vim /etc/init.d/initswitch  
-> replace 
->     /usr/bin/switchaction
-> by 
->     sh -e /usr/bin/switchaction
+> replace   
+>     /usr/bin/switchaction  
+> by   
+>     sh -e /usr/bin/switchaction  
 
-vim /etc/rc.button/BTN_8
-> replace 
->     /usr/bin/switchaction
-> by 
->     sh -e /usr/bin/switchaction
+vim /etc/rc.button/BTN_8  
+> replace   
+>     /usr/bin/switchaction  
+> by   
+>     sh -e /usr/bin/switchaction  
 
 test !

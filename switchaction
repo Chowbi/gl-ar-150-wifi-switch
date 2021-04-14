@@ -1,0 +1,16 @@
+#!/bin/bash
+
+pending=$(ubus call network.wireless status | jsonfilter -e @.radio0.pending)
+
+up=$(ubus call network.wireless status | jsonfilter -e @.radio0.up)
+
+if $pending ; then
+    echo "pending switch, abort" ;
+    return ;
+elif $up ; then
+    echo "switching off wifi"
+    wifi down ;
+else
+    echo "switching up wifi"
+    wifi up ;
+fi

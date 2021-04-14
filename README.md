@@ -4,7 +4,7 @@ mv /usr/bin/switchaction /usr/bin/switchaction.bak
 
 vim /usr/bin/switchaction
 > i  
-> {copy content}
+> {copy content}  
 > echap  
 > :wq  
 
